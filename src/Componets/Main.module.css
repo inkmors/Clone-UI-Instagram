@@ -72,10 +72,6 @@ form {
   cursor: pointer;
 }
 
-.alignInputs button:hover {
-  background-color: #3d7fd8;
-}
-
 .alignOr {
   display: flex;
   align-items: center;
