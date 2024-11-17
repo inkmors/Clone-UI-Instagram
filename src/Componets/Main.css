@@ -126,12 +126,18 @@ form {
   cursor: pointer;
 }
 
-.alignRememberMe a:nth-child(1) {
+.alignIconFacebook{
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.alignRememberMe .alignIconFacebook a{
   color: #62a5f1;
   font-weight: 500;
 }
 
-.alignRememberMe a:nth-child(2) {
+.alignRememberMe a {
   color: #122a46;
   font-weight: 400;
 }
@@ -149,6 +155,7 @@ form {
 .alignAppsBtns img {
   cursor: pointer;
 }
+
 
 @media screen and (max-width: 880px) {
   .images {
