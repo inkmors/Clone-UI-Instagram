@@ -13,9 +13,7 @@ section, .all_main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 1.5rem;
-  width: 100%;
   padding: 2em;
   border: 1px solid #c0c0c0;
   box-sizing: border-box;
@@ -33,7 +31,6 @@ section, .all_main {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  width: 100%;
 }
 
 form {
@@ -49,10 +46,7 @@ form {
 .alignInputs {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .alignInputs input, .alignInputs button {
@@ -76,6 +70,10 @@ form {
   color: #fff;
   border: none;
   cursor: pointer;
+}
+
+.alignInputs button:hover {
+  background-color: #3d7fd8;
 }
 
 .alignOr {
