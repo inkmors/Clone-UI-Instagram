@@ -1,7 +1,32 @@
-//import logo from './logo.svg';
+import React, { useEffect } from 'react';
 import './Main.css';
 
+
+
 function App() {
+    useEffect(() => {
+        const btnRemberme = document.getElementById('btnRegister');
+        const btnFacebook = document.getElementById('btnFacebook');
+        const btnForgot = document.getElementById('btnForgot');
+        const btnIdEnter = document.getElementById('btnIdEnter');
+
+        const handleClick = () => {
+            alert('Funcionalidade em desenvolvimento');
+        }
+    
+        btnRemberme.addEventListener('click', handleClick);
+        btnFacebook.addEventListener('click', handleClick);
+        btnForgot.addEventListener('click', handleClick);
+        btnIdEnter.addEventListener('click', handleClick);
+    
+        return () => {
+            btnRemberme.removeEventListener("click", handleClick);
+            btnFacebook.removeEventListener("click", handleClick);
+            btnForgot.removeEventListener("click", handleClick);
+            btnIdEnter.removeEventListener("click", handleClick);
+        } 
+    }, [])
+
   return (
     <div class="all_main">
         <main>
@@ -30,14 +55,14 @@ function App() {
                     <div class="alignRememberMe">
                         <div class="alignIconFacebook">
                             <img src="/facebook.png" width={'20rem'} alt="Facebook"/>
-                            <a href="##">Entrar com Facebook</a>
+                            <a id="btnFacebook" href="##">Entrar com Facebook</a>
                         </div>
-                        <a href="##">Esqueceu a senha?</a>
+                        <a id='btnForgot' href="##">Esqueceu a senha?</a>
                     </div>
                 </div>
     
                 <div class="divBoxNewAccount">
-                    <p>Não tem uma conta?<span><a href="##"> Cadastre-se</a></span></p>
+                    <p>Não tem uma conta?<span><a id='btnRegister' href="##"> Cadastre-se</a></span></p>
                 </div>
     
                 <p>Obtenha o aplicativo</p>
