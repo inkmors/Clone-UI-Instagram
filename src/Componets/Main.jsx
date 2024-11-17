@@ -7,8 +7,7 @@ function App() {
         <main>
         <section>
             <div class="images">
-                <img src='' alt='Telefone1' />
-                <img src='' alt='Telefone2' />
+                <img src="/home-phones-2x.png" width={'420rem'} alt='Telefone1'/>
             </div>
 
             <div class='divAlignBox'>
@@ -35,13 +34,13 @@ function App() {
                 </div>
     
                 <div class="divBoxNewAccount">
-                    <p>Não tem uma conta?<span><a href="##">Cadastre-se</a></span></p>
+                    <p>Não tem uma conta?<span><a href="##"> Cadastre-se</a></span></p>
                 </div>
     
                 <p>Obtenha o aplicativo</p>
                 <div class='alignAppsBtns'>
-                    <img src="" alt="GooglePlay"/>
-                    <img src="" alt="Microsoft"/>
+                    <img src="/googleplay.png" width={'120rem'} alt="GooglePlay"/>
+                    <img src="/microsoft.png" width={'100rem'} alt="Microsoft"/>
                 </div>
             </div>
         </section>
